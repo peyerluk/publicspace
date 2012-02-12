@@ -20,7 +20,7 @@ end
 
 gem 'jquery-rails', '~> 2.0.0' # includes jquery 1.6
 
-gem 'twitter'
+gem 'twitter', '~> 2.1.0'
 # gem 'tweetstream'
 
 # To use ActiveModel has_secure_password
