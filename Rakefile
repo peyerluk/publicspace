@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-PublicspaceRails::Application.load_tasks
+Publicspace::Application.load_tasks
