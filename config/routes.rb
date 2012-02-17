@@ -5,7 +5,8 @@ Publicspace::Application.routes.draw do
   ### HOME ###
   root :to => 'static#home'
 
-
+  resources :sources
+  
   ### INSTRUCTIONS ###
   
   # Sample of regular route:

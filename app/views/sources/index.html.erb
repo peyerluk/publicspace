@@ -1,0 +1,17 @@
+<header class="header-normal">
+  <h1>Quellen</h1>
+</header>
+
+<ul class="nav nav-pills">
+  <li class="active">
+    <a href="#">Alle</a>
+  </li>
+</ul>
+
+<ul class="unstyled">
+  <% @sources.each do |source| %>
+  <li>
+    <span class="label label-info"><%= source.origin %></span> <%= link_to(source.identifier, source_path(source)) %>
+  </li>
+  <% end %>
+</ul>

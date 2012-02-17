@@ -8,4 +8,5 @@
  * APP CSS:
  *= require_self
  *= require bootstrap/setup
+ *= require publicspace/publicspace
 */

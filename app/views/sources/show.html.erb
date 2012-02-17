@@ -1,0 +1,30 @@
+<header class="header-normal">
+  <div style="float:left; margin:3px 0 0;"><img src="<%= @source.image_url %>"></img></div>
+  <h4><%= link_to(@source.origin, sources_path) %></h4>
+  <h1 style="line-height:30px;"><%= @source.identifier %></h1>
+</header>
+
+<div class="whitespace"></div>
+<table class="table table-striped table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Wert</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Crawler</td>
+      <td><%= @source.crawler %></td>
+    </tr>
+    <tr>
+      <td>Leztes Update</td>
+      <td><%= @source.last_visit %></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>Twitter Account</h4>
+<pre>
+  <%= @source.info.to_yaml.gsub(/\A.*\nattrs:/, "") %>
+</pre>
