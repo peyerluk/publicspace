@@ -47,3 +47,13 @@ name = "#{prename} #{surname}"
 +++ name = 'John Doe'
 +++ name = "#{prename} #{surname}"
 ```
+
+Bad:
+```diff
+--- name = "John Doe"
+```
+Good:
+```coffee
+name = 'John Doe'
+name = "#{prename} #{surname}"
+```
