@@ -11,3 +11,39 @@ This is how it is done:
 --- Bad example
 +++ Good example
 ```
+
+    ```coffeescript
+    # bad:
+    name = "John Doe"
+
+    # good:
+    name = 'John Doe'
+    name = "#{prename} #{surname}"
+    ```
+    
+    ```coffeescript
+    # bad:
+    --- name = "John Doe"
+
+    # good:
+    +++ name = 'John Doe'
+    +++ name = "#{prename} #{surname}"
+    ```
+    
+    ```coffee
+    # bad:
+    --- name = "John Doe"
+
+    # good:
+    +++ name = 'John Doe'
+    +++ name = "#{prename} #{surname}"
+    ```
+    
+    ```diff
+    # bad:
+    --- name = "John Doe"
+
+    # good:
+    +++ name = 'John Doe'
+    +++ name = "#{prename} #{surname}"
+    ```
